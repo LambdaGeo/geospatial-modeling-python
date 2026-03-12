@@ -1,0 +1,12 @@
+mkdocs>=1.5
+mkdocs-material>=9.5
+mkdocs-jupyter>=0.24
+pymdown-extensions>=10.0
+dissmodel>=0.2.0
+geopandas
+rasterio
+libpysal
+salabim
+numpy
+pandas
+matplotlib

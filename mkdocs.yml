@@ -1,0 +1,71 @@
+site_name: Geospatial Modeling with Python
+site_description: >
+  A practical guide to geographic data science and discrete spatial simulation
+  using the Python ecosystem and the DisSModel framework.
+site_author: "Sergio Souza Costa"
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: teal
+      accent: green
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      include: ["*.ipynb"]
+      execute: false
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+
+  - Part I — Python for Data Science:
+    - "Ch 1: The Python Scientific Ecosystem":    part1/ch01_ecosystem.ipynb
+    - "Ch 2: Mastering Pandas":                   part1/ch02_pandas.ipynb
+    - "Ch 3: Data Cleaning and Preparation":      part1/ch03_cleaning.ipynb
+    - "Ch 4: Exploratory Data Analysis":          part1/ch04_eda.ipynb
+    - "Ch 5: Software Engineering for Science":   part1/ch05_software_eng.ipynb
+
+  - Part II — Geographic Data Science:
+    - "Ch 6: Introduction to Spatial Data":       part2/ch06_spatial_intro.ipynb
+    - "Ch 7: Vector Data with GeoPandas":         part2/ch07_vector.ipynb
+    - "Ch 8: Raster Data with NumPy & rasterio":  part2/ch08_raster.ipynb
+    - "Ch 9: Spatial Relationships & Weights":    part2/ch09_weights.ipynb
+    - "Ch 10: Visualizing Spatial Data":          part2/ch10_visualization.ipynb
+
+  - Part III — Discrete Spatial Modeling:
+    - "Ch 11: Paradigms of Discrete Spatial Modeling": part3/ch11_paradigms.ipynb
+    - "Ch 12: Cellular Automata from Scratch":         part3/ch12_ca_scratch.ipynb
+    - "Ch 13: The Performance Problem":                part3/ch13_performance.ipynb
+    - "Ch 14: Discrete Event Simulation (salabim)":    part3/ch14_salabim.ipynb
+    - "Ch 15: Vectorized Models with NumPy":           part3/ch15_numpy_models.ipynb
+    - "Ch 16: Introducing DisSModel":                  part3/ch16_dissmodel.ipynb
+    - "Ch 17: Building Models with DisSModel":         part3/ch17_building_models.ipynb
+    - "Ch 18: Case Study — Coastal Dynamics":          part3/ch18_coastal_dynamics.ipynb
+    - "Ch 19: Additional Case Studies":                part3/ch19_case_studies.ipynb
+    - "Ch 20: Extending DisSModel":                    part3/ch20_extending.ipynb
