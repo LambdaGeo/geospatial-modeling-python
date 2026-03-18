@@ -10,3 +10,4 @@ salabim
 numpy
 pandas
 matplotlib
+geodatasets
