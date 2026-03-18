@@ -15,18 +15,25 @@ theme:
     - navigation.top
     - navigation.sections
     - toc.integrate
+    - content.code.annotate  
   palette:
     - scheme: default
       primary: teal
       accent: green
+
 
 plugins:
   - search
   - mkdocs-jupyter:
       include: ["*.ipynb"]
       execute: false
+      markdown_extensions: 
+        - admonition
+        - pymdownx.details
+        - pymdownx.superfences
 
 markdown_extensions:
+  - pymdownx.details
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.highlight:
