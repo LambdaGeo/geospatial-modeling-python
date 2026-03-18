@@ -1,6 +1,6 @@
 # Geospatial Modeling with Python
 
-**Sergio Souza Costa** — LambdaGEO, UFMA
+**Sergio Souza Costa** — LambdaGEO, UFMA 
 
 ---
 
