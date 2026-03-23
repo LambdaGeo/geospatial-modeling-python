@@ -59,7 +59,7 @@ nav:
 
   - Part I — Python for Data Science:
     - "Ch 1: The Python Scientific Ecosystem":    part1/ch01_ecosystem.ipynb
-    - "Ch 2: Mastering Pandas":                   part1/ch02_pandas.ipynb
+    - "Chapter 2: The Geospatial Python Toolbox":                   part1/ch02_python_toolbox.ipynb
     - "Ch 3: Data Cleaning and Preparation":      part1/ch03_cleaning.ipynb
     - "Ch 4: Exploratory Data Analysis":          part1/ch04_eda.ipynb
     - "Ch 5: Software Engineering for Science":   part1/ch05_software_eng.ipynb
