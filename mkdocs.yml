@@ -11,23 +11,22 @@ theme:
   name: material
   language: en
   features:
-    - navigation.tabs
+    #- navigation.tabs
     - navigation.top
     - navigation.sections
     - toc.integrate
-    - content.code.annotate  
+    - content.code.annotate
   palette:
     - scheme: default
       primary: teal
       accent: green
-
 
 plugins:
   - search
   - mkdocs-jupyter:
       include: ["*.ipynb"]
       execute: false
-      markdown_extensions: 
+      markdown_extensions:
         - admonition
         - pymdownx.details
         - pymdownx.superfences
@@ -57,28 +56,79 @@ extra_javascript:
 nav:
   - Home: index.md
 
-  - Part I — Python for Data Science:
-    - "Ch 1: The Python Scientific Ecosystem":    part1/ch01_ecosystem.ipynb
-    - "Chapter 2: The Geospatial Python Toolbox":                   part1/ch02_python_toolbox.ipynb
-    - "Ch 3: Data Cleaning and Preparation":      part1/ch03_cleaning.ipynb
-    - "Ch 4: Exploratory Data Analysis":          part1/ch04_eda.ipynb
-    - "Ch 5: Software Engineering for Science":   part1/ch05_software_eng.ipynb
+  # ── Part I ──────────────────────────────────────────────────────────────────
+  # Condensada: ramp-up para o pesquisador, não data science geral.
+  # Cleaning e EDA movidos para apêndices — não justificam capítulos no fluxo.
+  # Software Engineering sobe: molda a mentalidade antes do código científico.
+  - Part I — Scientific Python for Researchers:
+    - "Ch 1: The Scientific Python Ecosystem":  part1/ch01_ecosystem.ipynb
+    - "Ch 2: The Geospatial Python Toolbox":    part1/ch02_python_toolbox.ipynb
+    - "Ch 3: Software Engineering for Science": part1/ch03_software_eng.ipynb
 
+  # ── Part II ─────────────────────────────────────────────────────────────────
+  # Xarray entra como Ch 6: ponte essencial entre dado geoespacial e simulação
+  # temporal — ausente no original. ESDA volta como conteúdo principal.
+  # Visualização vai ao final: o leitor já tem dados reais para plotar.
   - Part II — Geographic Data Science:
-    - "Ch 6: Introduction to Spatial Data":       part2/ch06_spatial_intro.ipynb
-    - "Ch 7: Vector Data with GeoPandas":         part2/ch07_vector.ipynb
-    - "Ch 8: Raster Data with NumPy & rasterio":  part2/ch08_raster.ipynb
-    - "Ch 9: Spatial Relationships & Weights":    part2/ch09_weights.ipynb
-    - "Ch 10: Visualizing Spatial Data":          part2/ch10_visualization.ipynb
+    - "Ch 4: Vector Data with GeoPandas":            part2/ch04_vector.ipynb
+    - "Ch 5: Raster Data with rasterio":             part2/ch05_raster.ipynb
+    - "Ch 6: Multidimensional Arrays with Xarray":   part2/ch06_xarray.ipynb
+    - "Ch 7: Spatial Relationships and Weights":     part2/ch07_weights.ipynb
+    - "Ch 8: Exploratory Spatial Data Analysis":     part2/ch08_esda.ipynb
+    - "Ch 9: Visualizing Spatial Data":              part2/ch09_visualization.ipynb
 
-  - Part III — Discrete Spatial Modeling:
-    - "Ch 11: Paradigms of Discrete Spatial Modeling": part3/ch11_paradigms.ipynb
-    - "Ch 12: Cellular Automata from Scratch":         part3/ch12_ca_scratch.ipynb
-    - "Ch 13: The Performance Problem":                part3/ch13_performance.ipynb
-    - "Ch 14: Discrete Event Simulation (salabim)":    part3/ch14_salabim.ipynb
-    - "Ch 15: Vectorized Models with NumPy":           part3/ch15_numpy_models.ipynb
-    - "Ch 16: Introducing DisSModel":                  part3/ch16_dissmodel.ipynb
-    - "Ch 17: Building Models with DisSModel":         part3/ch17_building_models.ipynb
-    - "Ch 18: Case Study — Coastal Dynamics":          part3/ch18_coastal_dynamics.ipynb
-    - "Ch 19: Additional Case Studies":                part3/ch19_case_studies.ipynb
-    - "Ch 20: Extending DisSModel":                    part3/ch20_extending.ipynb
+  # ── Part III ────────────────────────────────────────────────────────────────
+  # Lógica narrativa: por que simular → como funciona → por que é difícil
+  # → DisSModel resolve → como usar → LUCC → caso real → reprodutibilidade.
+  #
+  # Performance (Ch 13) vem DEPOIS de salabim (Ch 12): o leitor sente o
+  # problema antes de receber a solução.
+  #
+  # DisSModel entra no Ch 14 — antes da metade da Part III — como resposta
+  # natural aos capítulos anteriores.
+  #
+  # LUCC ganha capítulo próprio (Ch 16): é o domínio central do framework
+  # e ancora o livro no contexto INPE / Cerrado / Amazônia.
+  #
+  # Reprodutibilidade e proveniência (Ch 18) entram como capítulo explícito:
+  # ExperimentRecord, registry TOML — diferencial real frente ao TerraME.
+  #
+  # Extending DisSModel (Ch 19) movido para apêndice: capítulo mais acoplado
+  # à interface ABC atual — alto risco de desatualização.
+  - Part III — Discrete Spatial Modeling with DisSModel:
+    - "Ch 10: Paradigms of Spatial Simulation":             part3/ch10_paradigms.ipynb
+    - "Ch 11: Cellular Automata from Scratch":              part3/ch11_ca_scratch.ipynb
+    - "Ch 12: Discrete Event Simulation with salabim":      part3/ch12_salabim.ipynb
+    - "Ch 13: The Performance Problem — and the Solution":  part3/ch13_performance.ipynb
+    - "Ch 14: Introducing DisSModel":                       part3/ch14_dissmodel_intro.ipynb
+    - "Ch 15: Building Models with DisSModel":              part3/ch15_building_models.ipynb
+    - "Ch 16: Land Use and Cover Change (LUCC) Modeling":   part3/ch16_lucc.ipynb
+    - "Ch 17: Case Study — Coastal Dynamics":               part3/ch17_coastal_dynamics.ipynb
+    - "Ch 18: Reproducibility and Experiment Provenance":   part3/ch18_reproducibility.ipynb
+
+  # ── Part IV ─────────────────────────────────────────────────────────────────
+  # Nova parte: DisSModel evoluiu para plataforma. O pesquisador-usuário
+  # precisa saber usar a plataforma, não necessariamente como ela foi construída.
+  #
+  # Ch 20 é o capítulo estratégico para leitores do INPE: posiciona DisSModel
+  # no ecossistema BDC / SITS / Pangeo — estável, escreva agora.
+  #
+  # Ch 21 (Running Models with the Platform) marcado como rascunho:
+  # plataforma em v0.1 draft, endpoints ainda vão mudar. Escrever tutorial
+  # de curl e autenticação agora tem alto risco de desatualizar rápido.
+  - Part IV — DisSModel in Practice:
+    - "Ch 20: DisSModel and the Brazilian Earth Observation Ecosystem": part4/ch20_ecosystem.ipynb
+    - "Ch 21: Running Models with the DisSModel Platform":              part4/ch21_platform.ipynb
+    - "Ch 22: Ensemble Scenarios and Sensitivity Analysis":             part4/ch22_ensemble.ipynb
+
+  # ── Apêndices ───────────────────────────────────────────────────────────────
+  # A e B: conteúdo de referência — o pesquisador que precisar encontra aqui.
+  # C: Extending DisSModel (era Ch 19) — acoplado à ABC atual, vive melhor
+  #    como referência técnica do que como capítulo no fluxo narrativo.
+  # D: API Reference — gerado automaticamente (mkdocstrings) ou mantido
+  #    como documento de referência separado do fluxo didático.
+  - Appendices:
+    - "A: Data Cleaning and Preparation":    appendices/app_a_cleaning.ipynb
+    - "B: Exploratory Data Analysis":        appendices/app_b_eda.ipynb
+    - "C: Extending DisSModel — Executors": appendices/app_c_extending.ipynb
+    - "D: DisSModel API Reference":          appendices/app_d_api_ref.md
