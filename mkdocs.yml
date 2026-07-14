@@ -10,15 +10,35 @@ site_dir: site
 theme:
   name: material
   language: en
+  font: false
   features:
-    - navigation.top
+    - navigation.instant
+    - navigation.tracking
     - navigation.sections
-    - toc.integrate
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
     - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - toc.follow
   palette:
-    - scheme: default
-      primary: teal
-      accent: green
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
 
 plugins:
   - search
@@ -31,6 +51,8 @@ plugins:
         - pymdownx.superfences
 
 markdown_extensions:
+  - attr_list
+  - admonition
   - pymdownx.details
   - pymdownx.arithmatex:
       generic: true
@@ -38,14 +60,17 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.tabbed:
       alternate_style: true
-  - admonition
-  - toc:
-      permalink: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - tables
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/lambdageo.css
 
 extra_javascript:
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
