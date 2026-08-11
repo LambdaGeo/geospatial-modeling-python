@@ -7,6 +7,12 @@
 This book is a practical guide to geographic data science and discrete spatial
 simulation using the Python ecosystem.
 
+!!! info "Relationship to the technical reference"
+    This book is the **didactic textbook** — from scratch up to DisSModel. For
+    installation details, the full API, architecture decisions, and a
+    TerraME/LUCCME → DisSModel migration guide, see the companion
+    [*DisSModel Book*](https://github.com/DisSModel/dissmodel-book).
+
 It is organized in four parts:
 
 - **Part I** — Scientific Python for Researchers  
