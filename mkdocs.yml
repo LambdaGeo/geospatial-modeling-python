@@ -78,6 +78,7 @@ extra_javascript:
   - javascripts/mermaid-init.js
 
 nav:
+  - "⇦ LambdaGeo ebooks": https://lambdageo.github.io/ebooks/
   - Home: index.md
 
   - Part I — Scientific Python for Researchers:
