@@ -45,10 +45,6 @@ plugins:
   - mkdocs-jupyter:
       include: ["*.ipynb"]
       execute: false
-      markdown_extensions:
-        - admonition
-        - pymdownx.details
-        - pymdownx.superfences
 
 markdown_extensions:
   - attr_list
@@ -98,18 +94,30 @@ nav:
     - "Ch 12: Visualizing Spatial Data":               part2/ch12_visualization.ipynb
     - "Ch 13: Raster-Vector Integration Patterns":     part2/ch13_integration.ipynb
 
-  - Part III — Discrete Spatial Modeling:
+  - Part III — Foundations of Spatial Simulation:
     - "Ch 14: Paradigms of Spatial Simulation":           part3/ch14_paradigms.ipynb
     - "Ch 15: Cellular Automata from Scratch":            part3/ch15_ca.ipynb
     - "Ch 16: Discrete-Event Simulation with salabim":    part3/ch16_des.ipynb
     - "Ch 17: The Performance Problem — and the Solution": part3/ch17_performance.ipynb
-    - "Ch 18: Introducing DisSModel":                     part3/ch18_dissmodel.ipynb
-    - "Ch 19: Building Models with DisSModel":            part3/ch19_building.ipynb
-    - "Ch 20: Land Use and Cover Change Modeling":        part3/ch20_lucc.ipynb
-    - "Ch 21: Case Study — Coastal Dynamics":             part3/ch21_coastal.ipynb
-    - "Ch 22: Reproducibility and Experiment Provenance": part3/ch22_provenance.ipynb
 
-  - Part IV — DisSModel in Practice:
-    - "Ch 23: DisSModel and the Brazilian EO Ecosystem": part4/ch23_ecosystem.ipynb
-    - "Ch 24: Running Models with the DisSModel Platform": part4/ch24_platform.ipynb
-    - "Ch 25: Ensemble Scenarios and Sensitivity Analysis": part4/ch25_ensemble.ipynb
+  - "Part IV — DisSModel: Core and Paradigms":
+    - "Ch 18: Introducing DisSModel":                     part4/ch18_dissmodel.ipynb
+    - "Ch 19: Building Models with DisSModel":            part4/ch19_building.ipynb
+    - "Ch 20: System Dynamics with DisSModel":            part4/ch20_sysdyn.ipynb
+    - "Ch 21: Cellular Automata with DisSModel":          part4/ch21_ca_dissmodel.ipynb
+    - "Ch 22: Agent-Based Modeling with DisSModel":       part4/ch22_abm.ipynb
+
+  - "Part V — Domain Modeling: Land Use & Coastal Systems":
+    - "Ch 23: Land Use and Cover Change Modeling":        part5/ch23_lucc.ipynb
+    - "Ch 24: Case Study — Coastal Dynamics":             part5/ch24_coastal.ipynb
+
+  - Part VI — Data & Infrastructure:
+    - "Ch 25: Reproducibility and Experiment Provenance": part6/ch25_provenance.ipynb
+    - "Ch 26: DisSModel and the Brazilian EO Ecosystem":  part6/ch26_ecosystem.ipynb
+    - "Ch 27: Running Models with the DisSModel Platform": part6/ch27_platform.ipynb
+    - "Ch 28: Spatial Data Cubes":                        part6/ch28_disscube.ipynb
+
+  - Part VII — Scaling, Migration & Reference:
+    - "Ch 29: Ensemble Scenarios and Sensitivity Analysis": part7/ch29_ensemble.ipynb
+    - "Ch 30: Migrating from TerraME/LUCCME to DisSModel": part7/ch30_migration.ipynb
+    - "Ch 31: Architecture and Contributing":             part7/ch31_architecture.ipynb
