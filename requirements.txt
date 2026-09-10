@@ -12,3 +12,6 @@ pandas
 matplotlib
 geodatasets
 seaborn
+xarray
+rioxarray
+dask
