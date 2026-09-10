@@ -12,3 +12,10 @@ pandas
 matplotlib
 geodatasets
 seaborn
+xarray
+rioxarray
+dask
+esda
+splot
+contextily
+folium
