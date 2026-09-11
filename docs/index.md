@@ -4,33 +4,53 @@
 
 ---
 
-This book is a practical guide to geographic data science and discrete spatial
-simulation using the Python ecosystem.
+This book comes in two volumes, sharing one site and one numbering.
 
-!!! info "Relationship to the technical reference"
-    This book is the **didactic textbook** — from scratch up to DisSModel. For
-    installation details, the full API, architecture decisions, and a
-    TerraME/LUCCME → DisSModel migration guide, see the companion
-    [*DisSModel Book*](https://github.com/DisSModel/dissmodel-book).
+## Volume I — Foundations (Ch 1–17)
 
-It is organized in four parts:
+A self-contained geographic data science and scientific Python course —
+**no DisSModel required**. Python fundamentals, Pandas, data cleaning,
+vector and raster geospatial analysis, spatial statistics, and the
+simulation paradigms (cellular automata, discrete-event simulation)
+built by hand before any framework enters the picture. If your interest
+is geospatial Python on its own, this volume is the whole book you need.
 
-- **Part I** — Scientific Python for Researchers  
+- **Part I** — Scientific Python for Researchers
   Core tools and practices: Python fundamentals, Pandas, data cleaning, EDA,
   and software engineering for reproducible science.
 
-- **Part II** — Geographic Data Science  
+- **Part II** — Geographic Data Science
   A dual-substrate approach covering both vector and raster data models,
   multidimensional arrays, spatial relationships, and raster-vector integration.
 
-- **Part III** — Discrete Spatial Modeling  
+- **Part III** — Foundations of Spatial Simulation
   Cellular automata, discrete-event simulation with salabim, NumPy
-  vectorization, and the [DisSModel](https://github.com/DisSModel/dissmodel)
-  framework — including a full coastal dynamics case study.
+  vectorization, and the performance problem that motivates DisSModel.
 
-- **Part IV** — DisSModel in Practice  
-  The Brazilian Earth Observation ecosystem, the DisSModel Platform,
-  and ensemble scenario analysis.
+## Volume II — The DisSModel Ecosystem (Ch 18–30)
+
+Picks up exactly where Volume I leaves off and hands its concepts to
+[DisSModel](https://github.com/DisSModel/dissmodel), the Python-native
+spatial modeling framework this book's own research group develops —
+installation, every simulation paradigm as a framework, domain case
+studies, infrastructure, and a TerraME/LUCCME migration guide. (The
+`dissmodel` package's own API reference lives with the code, at
+[dissmodel.github.io/dissmodel](https://dissmodel.github.io/dissmodel/);
+this volume is the narrative path to it, not a substitute.)
+
+- **Part IV** — DisSModel: Core and Paradigms
+  Installing and building models with DisSModel, then each simulation
+  paradigm in turn — system dynamics, cellular automata, agent-based modeling.
+
+- **Part V** — Domain Modeling: Land Use & Coastal Systems
+  DisSLUCC's land-use change models and a full coastal dynamics case study.
+
+- **Part VI** — Data & Infrastructure
+  Reproducibility, the DisSModel Platform, and spatial data cubes.
+
+- **Part VII** — Scaling, Migration & Reference
+  Ensemble scenarios, migrating an existing TerraME/LUCCME model, and how to
+  contribute to the ecosystem.
 
 ---
 
@@ -58,42 +78,70 @@ models. Chapters 6–13 are fully independent of DisSModel.*
 | 6 | Introduction to Spatial Data | Both | `part2/ch06_spatial_intro.ipynb` |
 | 7 | Vector Data with GeoPandas | Vector | `part2/ch07_vector.ipynb` |
 | 8 | Raster Data with NumPy and rasterio | Raster | `part2/ch08_raster.ipynb` |
-| 9 | Multidimensional Arrays with Xarray | Raster | `part2/ch09_xarray.ipynb` ⭐ |
+| 9 | Multidimensional Arrays with Xarray | Raster | `part2/ch09_xarray.ipynb` |
 | 10 | Spatial Relationships and Weights | Both | `part2/ch10_weights.ipynb` |
 | 11 | Exploratory Spatial Data Analysis | Both | `part2/ch11_esda.ipynb` |
 | 12 | Visualizing Spatial Data | Both | `part2/ch12_visualization.ipynb` |
-| 13 | Raster-Vector Integration Patterns | Both | `part2/ch13_integration.ipynb` ⭐ |
-
-⭐ New chapters added in this edition.
+| 13 | Raster-Vector Integration Patterns | Both | `part2/ch13_integration.ipynb` |
 
 ---
 
-## Part III — Discrete Spatial Modeling
+## Part III — Foundations of Spatial Simulation
 
-*Chapters 14–18 introduce simulation paradigms and build toward the DisSModel
-framework. Chapters 14–16 can be read without prior DisSModel knowledge.*
-
-| Ch | Title | DisSModel dependency | Notebook |
-|----|-------|----------------------|----------|
-| 14 | Paradigms of Spatial Simulation | None | `part3/ch14_paradigms.ipynb` |
-| 15 | Cellular Automata from Scratch | None | `part3/ch15_ca.ipynb` |
-| 16 | Discrete-Event Simulation with salabim | None | `part3/ch16_des.ipynb` |
-| 17 | The Performance Problem — and the Solution | None | `part3/ch17_performance.ipynb` |
-| 18 | Introducing DisSModel | API | `part3/ch18_dissmodel.ipynb` |
-| 19 | Building Models with DisSModel | API | `part3/ch19_building.ipynb` |
-| 20 | Land Use and Cover Change Modeling | API | `part3/ch20_lucc.ipynb` |
-| 21 | Case Study — Coastal Dynamics | API | `part3/ch21_coastal.ipynb` |
-| 22 | Reproducibility and Experiment Provenance | API | `part3/ch22_provenance.ipynb` |
-
----
-
-## Part IV — DisSModel in Practice
+*Simulation paradigms built by hand, before DisSModel is introduced. All four
+chapters are readable without any DisSModel knowledge.*
 
 | Ch | Title | Notebook |
 |----|-------|----------|
-| 23 | DisSModel and the Brazilian Earth Observation Ecosystem | `part4/ch23_ecosystem.ipynb` |
-| 24 | Running Models with the DisSModel Platform | `part4/ch24_platform.ipynb` |
-| 25 | Ensemble Scenarios and Sensitivity Analysis | `part4/ch25_ensemble.ipynb` |
+| 14 | Paradigms of Spatial Simulation | `part3/ch14_paradigms.ipynb` |
+| 15 | Cellular Automata from Scratch | `part3/ch15_ca.ipynb` |
+| 16 | Discrete-Event Simulation with salabim | `part3/ch16_des.ipynb` |
+| 17 | The Performance Problem — and the Solution | `part3/ch17_performance.ipynb` |
+
+---
+
+## Part IV — DisSModel: Core and Paradigms
+
+*Where the framework itself takes over — installation, architecture, and each
+simulation paradigm from Part III revisited with DisSModel doing the
+bookkeeping.*
+
+| Ch | Title | Notebook |
+|----|-------|----------|
+| 18 | Introducing DisSModel | `part4/ch18_dissmodel.ipynb` |
+| 19 | Building Models with DisSModel | `part4/ch19_building.ipynb` |
+| 20 | System Dynamics with DisSModel | `part4/ch20_sysdyn.ipynb` |
+| 21 | Cellular Automata with DisSModel | `part4/ch21_ca_dissmodel.ipynb` |
+| 22 | Agent-Based Modeling with DisSModel | `part4/ch22_abm.ipynb` |
+
+---
+
+## Part V — Domain Modeling: Land Use & Coastal Systems
+
+| Ch | Title | Notebook |
+|----|-------|----------|
+| 23 | Land Use and Cover Change Modeling | `part5/ch23_lucc.ipynb` |
+| 24 | Case Study — Coastal Dynamics | `part5/ch24_coastal.ipynb` |
+
+---
+
+## Part VI — Data & Infrastructure
+
+| Ch | Title | Notebook |
+|----|-------|----------|
+| 25 | Reproducibility and Experiment Provenance | `part6/ch25_provenance.ipynb` |
+| 26 | Running Models with the DisSModel Platform | `part6/ch26_platform.ipynb` |
+| 27 | Spatial Data Cubes | `part6/ch27_disscube.ipynb` |
+
+---
+
+## Part VII — Scaling, Migration & Reference
+
+| Ch | Title | Notebook |
+|----|-------|----------|
+| 28 | Ensemble Scenarios and Sensitivity Analysis | `part7/ch28_ensemble.ipynb` |
+| 29 | Migrating from TerraME/LUCCME to DisSModel | `part7/ch29_migration.ipynb` |
+| 30 | Architecture and Contributing | `part7/ch30_architecture.ipynb` |
 
 ---
 
@@ -104,8 +152,9 @@ interactively. Code cells are self-contained within each chapter.
 
 Parts I and II require no knowledge of DisSModel and are suitable for readers
 interested in geographic data science alone. Part III introduces simulation
-concepts independently before coupling to the framework. Part IV assumes
-familiarity with the full DisSModel API.
+concepts independently before Part IV hands the same problems to the
+framework. Parts V through VII assume familiarity with DisSModel's core API
+from Part IV.
 
 ## Installation
 
@@ -113,16 +162,18 @@ familiarity with the full DisSModel API.
 pip install geopandas rasterio xarray zarr libpysal salabim
 ```
 
-For chapters in Part III and IV that use DisSModel:
+For Part IV onward, which use DisSModel directly:
 
 ```bash
-pip install dissmodel>=0.4.0
+pip install dissmodel
 ```
 
-For the coastal dynamics case study (Chapter 21):
+Extension packages (`dissmodel-ca`, `dissmodel-sysdyn`, `dissmodel-abm`,
+`disslucc-continuous`, `disslucc-discrete`, `brmangue-dissmodel`) aren't on
+PyPI yet — install each one straight from GitHub, e.g.:
 
 ```bash
-pip install coastal-dynamics
+pip install "git+https://github.com/DisSModel/dissmodel-ca.git"
 ```
 
 ---
@@ -132,8 +183,7 @@ pip install coastal-dynamics
 All notebooks and supporting code are available at:
 
 - Book repository: [github.com/lambdageo/geospatial-modeling-python](https://github.com/lambdageo/geospatial-modeling-python)
-- DisSModel framework: [github.com/DisSModel/dissmodel](https://github.com/DisSModel/dissmodel)
-- Coastal dynamics models: [github.com/DisSModel/coastal-dynamics](https://github.com/DisSModel/coastal-dynamics)
+- DisSModel framework and API reference: [github.com/DisSModel/dissmodel](https://github.com/DisSModel/dissmodel)
 
 ---
 
@@ -149,5 +199,5 @@ https://lambdageo.github.io/geospatial-modeling-python
 
 ---
 
-*LambdaGEO Research Group · Federal University of Maranhão (UFMA)*  
+*LambdaGEO Research Group · Federal University of Maranhão (UFMA)*
 [lambdageo.github.io](https://lambdageo.github.io)

@@ -19,3 +19,7 @@ esda
 splot
 contextily
 folium
+git+https://github.com/DisSModel/dissmodel-ca.git
+git+https://github.com/DisSModel/dissmodel-sysdyn.git
+git+https://github.com/DisSModel/dissmodel-abm.git
+greenlet
