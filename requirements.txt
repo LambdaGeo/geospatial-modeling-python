@@ -17,6 +17,10 @@ rioxarray
 dask
 esda
 splot
+spreg
+scikit-learn
+spopt
+pointpats
 contextily
 folium
 git+https://github.com/DisSModel/dissmodel-ca.git
