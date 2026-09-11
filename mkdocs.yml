@@ -91,34 +91,37 @@ nav:
       - "Ch 8: Raster Data with NumPy and rasterio":     part2/ch08_raster.ipynb
       - "Ch 9: Multidimensional Arrays with Xarray":     part2/ch09_xarray.ipynb
       - "Ch 10: Spatial Relationships and Weights":      part2/ch10_weights.ipynb
-      - "Ch 11: Exploratory Spatial Data Analysis":      part2/ch11_esda.ipynb
-      - "Ch 12: Visualizing Spatial Data":               part2/ch12_visualization.ipynb
-      - "Ch 13: Raster-Vector Integration Patterns":     part2/ch13_integration.ipynb
+      - "Ch 11: Point Pattern Analysis":                 part2/ch11_pointpatterns.ipynb
+      - "Ch 12: Exploratory Spatial Data Analysis":      part2/ch12_esda.ipynb
+      - "Ch 13: Spatial Regression":                     part2/ch13_regression.ipynb
+      - "Ch 14: Clustering and Regionalization":         part2/ch14_clustering.ipynb
+      - "Ch 15: Visualizing Spatial Data":               part2/ch15_visualization.ipynb
+      - "Ch 16: Raster-Vector Integration Patterns":     part2/ch16_integration.ipynb
 
     - Part III — Foundations of Spatial Simulation:
-      - "Ch 14: Paradigms of Spatial Simulation":           part3/ch14_paradigms.ipynb
-      - "Ch 15: Cellular Automata from Scratch":            part3/ch15_ca.ipynb
-      - "Ch 16: Discrete-Event Simulation with salabim":    part3/ch16_des.ipynb
-      - "Ch 17: The Performance Problem — and the Solution": part3/ch17_performance.ipynb
+      - "Ch 17: Paradigms of Spatial Simulation":           part3/ch17_paradigms.ipynb
+      - "Ch 18: Cellular Automata from Scratch":            part3/ch18_ca.ipynb
+      - "Ch 19: Discrete-Event Simulation with salabim":    part3/ch19_des.ipynb
+      - "Ch 20: The Performance Problem — and the Solution": part3/ch20_performance.ipynb
 
   - "Volume II — The DisSModel Ecosystem":
     - "Part IV — DisSModel: Core and Paradigms":
-      - "Ch 18: Introducing DisSModel":                     part4/ch18_dissmodel.ipynb
-      - "Ch 19: Building Models with DisSModel":            part4/ch19_building.ipynb
-      - "Ch 20: System Dynamics with DisSModel":            part4/ch20_sysdyn.ipynb
-      - "Ch 21: Cellular Automata with DisSModel":          part4/ch21_ca_dissmodel.ipynb
-      - "Ch 22: Agent-Based Modeling with DisSModel":       part4/ch22_abm.ipynb
+      - "Ch 21: Introducing DisSModel":                     part4/ch21_dissmodel.ipynb
+      - "Ch 22: Building Models with DisSModel":            part4/ch22_building.ipynb
+      - "Ch 23: System Dynamics with DisSModel":            part4/ch23_sysdyn.ipynb
+      - "Ch 24: Cellular Automata with DisSModel":          part4/ch24_ca_dissmodel.ipynb
+      - "Ch 25: Agent-Based Modeling with DisSModel":       part4/ch25_abm.ipynb
 
     - "Part V — Domain Modeling: Land Use & Coastal Systems":
-      - "Ch 23: Land Use and Cover Change Modeling":        part5/ch23_lucc.ipynb
-      - "Ch 24: Case Study — Coastal Dynamics":             part5/ch24_coastal.ipynb
+      - "Ch 26: Land Use and Cover Change Modeling":        part5/ch26_lucc.ipynb
+      - "Ch 27: Case Study — Coastal Dynamics":             part5/ch27_coastal.ipynb
 
     - Part VI — Data & Infrastructure:
-      - "Ch 25: Reproducibility and Experiment Provenance": part6/ch25_provenance.ipynb
-      - "Ch 26: Running Models with the DisSModel Platform": part6/ch26_platform.ipynb
-      - "Ch 27: Spatial Data Cubes":                        part6/ch27_disscube.ipynb
+      - "Ch 28: Reproducibility and Experiment Provenance": part6/ch28_provenance.ipynb
+      - "Ch 29: Running Models with the DisSModel Platform": part6/ch29_platform.ipynb
+      - "Ch 30: Spatial Data Cubes":                        part6/ch30_disscube.ipynb
 
     - Part VII — Scaling, Migration & Reference:
-      - "Ch 28: Ensemble Scenarios and Sensitivity Analysis": part7/ch28_ensemble.ipynb
-      - "Ch 29: Migrating from TerraME/LUCCME to DisSModel": part7/ch29_migration.ipynb
-      - "Ch 30: Architecture and Contributing":             part7/ch30_architecture.ipynb
+      - "Ch 31: Ensemble Scenarios and Sensitivity Analysis": part7/ch31_ensemble.ipynb
+      - "Ch 32: Migrating from TerraME/LUCCME to DisSModel": part7/ch32_migration.ipynb
+      - "Ch 33: Architecture and Contributing":             part7/ch33_architecture.ipynb

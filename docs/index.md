@@ -6,7 +6,7 @@
 
 This book comes in two volumes, sharing one site and one numbering.
 
-## Volume I — Foundations (Ch 1–17)
+## Volume I — Foundations (Ch 1–20)
 
 A self-contained geographic data science and scientific Python course —
 **no DisSModel required**. Python fundamentals, Pandas, data cleaning,
@@ -27,7 +27,7 @@ is geospatial Python on its own, this volume is the whole book you need.
   Cellular automata, discrete-event simulation with salabim, NumPy
   vectorization, and the performance problem that motivates DisSModel.
 
-## Volume II — The DisSModel Ecosystem (Ch 18–30)
+## Volume II — The DisSModel Ecosystem (Ch 21–33)
 
 Picks up exactly where Volume I leaves off and hands its concepts to
 [DisSModel](https://github.com/DisSModel/dissmodel), the Python-native
@@ -71,7 +71,7 @@ this volume is the narrative path to it, not a substitute.)
 ## Part II — Geographic Data Science
 
 *A dual-substrate treatment of spatial data: vector and raster as complementary
-models. Chapters 6–13 are fully independent of DisSModel.*
+models. Chapters 6–16 are fully independent of DisSModel.*
 
 | Ch | Title | Substrate | Notebook |
 |----|-------|-----------|----------|
@@ -80,9 +80,12 @@ models. Chapters 6–13 are fully independent of DisSModel.*
 | 8 | Raster Data with NumPy and rasterio | Raster | `part2/ch08_raster.ipynb` |
 | 9 | Multidimensional Arrays with Xarray | Raster | `part2/ch09_xarray.ipynb` |
 | 10 | Spatial Relationships and Weights | Both | `part2/ch10_weights.ipynb` |
-| 11 | Exploratory Spatial Data Analysis | Both | `part2/ch11_esda.ipynb` |
-| 12 | Visualizing Spatial Data | Both | `part2/ch12_visualization.ipynb` |
-| 13 | Raster-Vector Integration Patterns | Both | `part2/ch13_integration.ipynb` |
+| 11 | Point Pattern Analysis | Vector | `part2/ch11_pointpatterns.ipynb` |
+| 12 | Exploratory Spatial Data Analysis | Both | `part2/ch12_esda.ipynb` |
+| 13 | Spatial Regression | Vector | `part2/ch13_regression.ipynb` |
+| 14 | Clustering and Regionalization | Vector | `part2/ch14_clustering.ipynb` |
+| 15 | Visualizing Spatial Data | Both | `part2/ch15_visualization.ipynb` |
+| 16 | Raster-Vector Integration Patterns | Both | `part2/ch16_integration.ipynb` |
 
 ---
 
@@ -93,10 +96,10 @@ chapters are readable without any DisSModel knowledge.*
 
 | Ch | Title | Notebook |
 |----|-------|----------|
-| 14 | Paradigms of Spatial Simulation | `part3/ch14_paradigms.ipynb` |
-| 15 | Cellular Automata from Scratch | `part3/ch15_ca.ipynb` |
-| 16 | Discrete-Event Simulation with salabim | `part3/ch16_des.ipynb` |
-| 17 | The Performance Problem — and the Solution | `part3/ch17_performance.ipynb` |
+| 17 | Paradigms of Spatial Simulation | `part3/ch17_paradigms.ipynb` |
+| 18 | Cellular Automata from Scratch | `part3/ch18_ca.ipynb` |
+| 19 | Discrete-Event Simulation with salabim | `part3/ch19_des.ipynb` |
+| 20 | The Performance Problem — and the Solution | `part3/ch20_performance.ipynb` |
 
 ---
 
@@ -108,11 +111,11 @@ bookkeeping.*
 
 | Ch | Title | Notebook |
 |----|-------|----------|
-| 18 | Introducing DisSModel | `part4/ch18_dissmodel.ipynb` |
-| 19 | Building Models with DisSModel | `part4/ch19_building.ipynb` |
-| 20 | System Dynamics with DisSModel | `part4/ch20_sysdyn.ipynb` |
-| 21 | Cellular Automata with DisSModel | `part4/ch21_ca_dissmodel.ipynb` |
-| 22 | Agent-Based Modeling with DisSModel | `part4/ch22_abm.ipynb` |
+| 21 | Introducing DisSModel | `part4/ch21_dissmodel.ipynb` |
+| 22 | Building Models with DisSModel | `part4/ch22_building.ipynb` |
+| 23 | System Dynamics with DisSModel | `part4/ch23_sysdyn.ipynb` |
+| 24 | Cellular Automata with DisSModel | `part4/ch24_ca_dissmodel.ipynb` |
+| 25 | Agent-Based Modeling with DisSModel | `part4/ch25_abm.ipynb` |
 
 ---
 
@@ -120,8 +123,8 @@ bookkeeping.*
 
 | Ch | Title | Notebook |
 |----|-------|----------|
-| 23 | Land Use and Cover Change Modeling | `part5/ch23_lucc.ipynb` |
-| 24 | Case Study — Coastal Dynamics | `part5/ch24_coastal.ipynb` |
+| 26 | Land Use and Cover Change Modeling | `part5/ch26_lucc.ipynb` |
+| 27 | Case Study — Coastal Dynamics | `part5/ch27_coastal.ipynb` |
 
 ---
 
@@ -129,9 +132,9 @@ bookkeeping.*
 
 | Ch | Title | Notebook |
 |----|-------|----------|
-| 25 | Reproducibility and Experiment Provenance | `part6/ch25_provenance.ipynb` |
-| 26 | Running Models with the DisSModel Platform | `part6/ch26_platform.ipynb` |
-| 27 | Spatial Data Cubes | `part6/ch27_disscube.ipynb` |
+| 28 | Reproducibility and Experiment Provenance | `part6/ch28_provenance.ipynb` |
+| 29 | Running Models with the DisSModel Platform | `part6/ch29_platform.ipynb` |
+| 30 | Spatial Data Cubes | `part6/ch30_disscube.ipynb` |
 
 ---
 
@@ -139,9 +142,9 @@ bookkeeping.*
 
 | Ch | Title | Notebook |
 |----|-------|----------|
-| 28 | Ensemble Scenarios and Sensitivity Analysis | `part7/ch28_ensemble.ipynb` |
-| 29 | Migrating from TerraME/LUCCME to DisSModel | `part7/ch29_migration.ipynb` |
-| 30 | Architecture and Contributing | `part7/ch30_architecture.ipynb` |
+| 31 | Ensemble Scenarios and Sensitivity Analysis | `part7/ch31_ensemble.ipynb` |
+| 32 | Migrating from TerraME/LUCCME to DisSModel | `part7/ch32_migration.ipynb` |
+| 33 | Architecture and Contributing | `part7/ch33_architecture.ipynb` |
 
 ---
 
