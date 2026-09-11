@@ -4,15 +4,16 @@
 
 ---
 
-This book is a practical guide to geographic data science and discrete spatial
-simulation using the Python ecosystem — from Python fundamentals through the
-full [DisSModel](https://github.com/DisSModel/dissmodel) framework, including
-installation, architecture, and a TerraME/LUCCME migration guide. (The
-`dissmodel` package's own API reference lives with the code, at
-[dissmodel.github.io/dissmodel](https://dissmodel.github.io/dissmodel/); this
-book is the narrative path to it, not a substitute.)
+This book comes in two volumes, sharing one site and one numbering.
 
-It is organized in seven parts:
+## Volume I — Foundations (Ch 1–17)
+
+A self-contained geographic data science and scientific Python course —
+**no DisSModel required**. Python fundamentals, Pandas, data cleaning,
+vector and raster geospatial analysis, spatial statistics, and the
+simulation paradigms (cellular automata, discrete-event simulation)
+built by hand before any framework enters the picture. If your interest
+is geospatial Python on its own, this volume is the whole book you need.
 
 - **Part I** — Scientific Python for Researchers
   Core tools and practices: Python fundamentals, Pandas, data cleaning, EDA,
@@ -26,6 +27,17 @@ It is organized in seven parts:
   Cellular automata, discrete-event simulation with salabim, NumPy
   vectorization, and the performance problem that motivates DisSModel.
 
+## Volume II — The DisSModel Ecosystem (Ch 18–30)
+
+Picks up exactly where Volume I leaves off and hands its concepts to
+[DisSModel](https://github.com/DisSModel/dissmodel), the Python-native
+spatial modeling framework this book's own research group develops —
+installation, every simulation paradigm as a framework, domain case
+studies, infrastructure, and a TerraME/LUCCME migration guide. (The
+`dissmodel` package's own API reference lives with the code, at
+[dissmodel.github.io/dissmodel](https://dissmodel.github.io/dissmodel/);
+this volume is the narrative path to it, not a substitute.)
+
 - **Part IV** — DisSModel: Core and Paradigms
   Installing and building models with DisSModel, then each simulation
   paradigm in turn — system dynamics, cellular automata, agent-based modeling.
@@ -34,8 +46,7 @@ It is organized in seven parts:
   DisSLUCC's land-use change models and a full coastal dynamics case study.
 
 - **Part VI** — Data & Infrastructure
-  Reproducibility, the Brazilian Earth Observation ecosystem, the DisSModel
-  Platform, and spatial data cubes.
+  Reproducibility, the DisSModel Platform, and spatial data cubes.
 
 - **Part VII** — Scaling, Migration & Reference
   Ensemble scenarios, migrating an existing TerraME/LUCCME model, and how to
@@ -119,9 +130,8 @@ bookkeeping.*
 | Ch | Title | Notebook |
 |----|-------|----------|
 | 25 | Reproducibility and Experiment Provenance | `part6/ch25_provenance.ipynb` |
-| 26 | DisSModel and the Brazilian Earth Observation Ecosystem | `part6/ch26_ecosystem.ipynb` |
-| 27 | Running Models with the DisSModel Platform | `part6/ch27_platform.ipynb` |
-| 28 | Spatial Data Cubes | `part6/ch28_disscube.ipynb` |
+| 26 | Running Models with the DisSModel Platform | `part6/ch26_platform.ipynb` |
+| 27 | Spatial Data Cubes | `part6/ch27_disscube.ipynb` |
 
 ---
 
@@ -129,9 +139,9 @@ bookkeeping.*
 
 | Ch | Title | Notebook |
 |----|-------|----------|
-| 29 | Ensemble Scenarios and Sensitivity Analysis | `part7/ch29_ensemble.ipynb` |
-| 30 | Migrating from TerraME/LUCCME to DisSModel | `part7/ch30_migration.ipynb` |
-| 31 | Architecture and Contributing | `part7/ch31_architecture.ipynb` |
+| 28 | Ensemble Scenarios and Sensitivity Analysis | `part7/ch28_ensemble.ipynb` |
+| 29 | Migrating from TerraME/LUCCME to DisSModel | `part7/ch29_migration.ipynb` |
+| 30 | Architecture and Contributing | `part7/ch30_architecture.ipynb` |
 
 ---
 
