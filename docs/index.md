@@ -4,6 +4,19 @@
 
 ---
 
+<div class="admonition warning">
+<p class="admonition-title">Work in progress</p>
+<p>This book is an active draft, not a finished text. Some material was assembled from existing course
+notes and translated into English with the assistance of AI tools; many chapters are still incomplete
+and will be revised with real-data examples as the underlying datasets and packages are finalized.
+The book is expected to reach a complete first edition by <strong>December 2027</strong>, as part of an
+ongoing research project on the <a href="https://github.com/DisSModel/dissmodel">DisSModel</a> framework.
+Feedback and corrections are welcome via the
+<a href="https://github.com/lambdageo/geospatial-modeling-python">book repository</a>.</p>
+</div>
+
+---
+
 This book comes in two volumes, sharing one site and one numbering.
 
 ## Volume I — Foundations (Ch 1–20)
