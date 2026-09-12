@@ -5,6 +5,7 @@ pymdown-extensions>=10.0
 dissmodel>=0.2.0
 geopandas
 rasterio
+rasterstats
 libpysal
 salabim
 numpy
