@@ -29,3 +29,5 @@ git+https://github.com/DisSModel/dissmodel-sysdyn.git
 git+https://github.com/DisSModel/dissmodel-abm.git
 greenlet
 statsmodels
+wtss
+setuptools<82  # wtss still imports pkg_resources, removed in setuptools 82.0.0
