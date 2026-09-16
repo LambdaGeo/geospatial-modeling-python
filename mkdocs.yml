@@ -99,7 +99,7 @@ nav:
       - "Ch 16: Raster-Vector Integration Patterns":     part2/ch16_integration.ipynb
 
     - Part III — Foundations of Spatial Simulation:
-      - "Ch 17: Paradigms of Spatial Simulation":           part3/ch17_paradigms.ipynb
+      - "Ch 17: Tools for Spatial Simulation":              part3/ch17_paradigms.ipynb
       - "Ch 18: Cellular Automata from Scratch":            part3/ch18_ca.ipynb
       - "Ch 19: Discrete-Event Simulation with salabim":    part3/ch19_des.ipynb
       - "Ch 20: The Performance Problem — and the Solution": part3/ch20_performance.ipynb
