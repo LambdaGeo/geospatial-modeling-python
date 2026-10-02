@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this book, please cite it as below."
+title: "Geospatial Modeling with Python"
+abstract: >-
+  A practical guide to geographic data science and discrete spatial simulation
+  using the Python ecosystem and the DisSModel framework.
+authors:
+  - family-names: Costa
+    given-names: Sérgio Souza
+    affiliation: "Universidade Federal do Maranhão (UFMA), LambdaGeo Research Group"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # add your ORCID
+license: CC-BY-4.0
+repository-code: "https://github.com/LambdaGeo/geospatial-modeling-python"
+keywords:
+  - geospatial modeling
+  - geographic data science
+  - spatial simulation
+  - cellular automata
+  - agent-based modeling
+  - system dynamics
+  - DisSModel
+  - Python

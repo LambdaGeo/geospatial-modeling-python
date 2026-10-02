@@ -45,6 +45,12 @@ plugins:
   - mkdocs-jupyter:
       include: ["*.ipynb"]
       execute: false
+  - print-site:               # single-page version at /print_page/ for PDF export
+      add_to_navigation: false
+      add_table_of_contents: true
+      toc_depth: 2
+      enumerate_headings: false
+      add_print_site_banner: false
 
 markdown_extensions:
   - attr_list
@@ -67,6 +73,7 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/lambdageo.css
+  - stylesheets/print.css
 
 extra_javascript:
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js

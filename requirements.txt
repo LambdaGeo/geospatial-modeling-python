@@ -1,6 +1,7 @@
 mkdocs>=1.5
 mkdocs-material>=9.5
 mkdocs-jupyter>=0.24
+mkdocs-print-site-plugin>=2.6
 pymdown-extensions>=10.0
 dissmodel>=0.2.0
 geopandas

@@ -24,6 +24,20 @@ docs/
   part3/   ch11 … ch20   # Discrete Spatial Modeling
 ```
 
+## PDF version
+
+```bash
+mkdocs serve
+# open http://127.0.0.1:8000/print_page/ in Chrome/Edge
+# Ctrl+P → "Save as PDF" → enable "Background graphics"
+```
+
+## Citation and license
+
+Cite this book using [`CITATION.cff`](CITATION.cff) (GitHub's "Cite this repository" button)
+or the DOI on Zenodo. Text, figures and code are released under
+[CC BY 4.0](LICENSE).
+
 ## Contributing
 
 Each chapter lives on its own branch: `chapter/chNN-slug`.

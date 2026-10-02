@@ -1,0 +1,24 @@
+{
+  "title": "Geospatial Modeling with Python",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "description": "A practical guide to geographic data science and discrete spatial simulation using the Python ecosystem and the DisSModel framework.",
+  "creators": [
+    {
+      "name": "Costa, Sérgio Souza",
+      "affiliation": "Universidade Federal do Maranhão (UFMA)"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "language": "eng",
+  "keywords": [
+    "geospatial modeling",
+    "geographic data science",
+    "spatial simulation",
+    "cellular automata",
+    "agent-based modeling",
+    "system dynamics",
+    "DisSModel",
+    "Python"
+  ]
+}
