@@ -123,12 +123,14 @@ nav:
       - "Ch 26: Land Use and Cover Change Modeling":        part5/ch26_lucc.ipynb
       - "Ch 27: Case Study — Coastal Dynamics":             part5/ch27_coastal.ipynb
 
-    - Part VI — Data & Infrastructure:
-      - "Ch 28: Reproducibility and Experiment Provenance": part6/ch28_provenance.ipynb
-      - "Ch 29: Running Models with the DisSModel Platform": part6/ch29_platform.ipynb
-      - "Ch 30: Spatial Data Cubes":                        part6/ch30_disscube.ipynb
+    - Part VI — Data, Reproducibility & Verification:
+      - "Ch 28: Spatial Data Cubes":                        part6/ch28_disscube.ipynb
+      - "Ch 29: Reproducibility and Experiment Provenance": part6/ch29_provenance.ipynb
+      - "Ch 30: Verifying Against a Reference Implementation": part6/ch30_verification.ipynb
+      - "Ch 31: Case Study — The Open LUCC Workflow":       part6/ch31_open_lucc.ipynb
 
     - Part VII — Scaling, Migration & Reference:
-      - "Ch 31: Ensemble Scenarios and Sensitivity Analysis": part7/ch31_ensemble.ipynb
-      - "Ch 32: Migrating from TerraME/LUCCME to DisSModel": part7/ch32_migration.ipynb
-      - "Ch 33: Architecture and Contributing":             part7/ch33_architecture.ipynb
+      - "Ch 32: Ensemble Scenarios and Sensitivity Analysis": part7/ch32_ensemble.ipynb
+      - "Ch 33 (optional): Running Models with the DisSModel Platform": part7/ch33_platform.ipynb
+      - "Ch 34: Migrating from TerraME/LUCCME to DisSModel": part7/ch34_migration.ipynb
+      - "Ch 35: Architecture and Contributing":             part7/ch35_architecture.ipynb
