@@ -14,6 +14,20 @@ mkdocs build        # build static site to site/
 mkdocs gh-deploy    # deploy to GitHub Pages
 ```
 
+## Check the chapters
+
+The notebooks are stored with their outputs and the site does not execute
+them. To run every chapter against the pinned packages (Python 3.11+) and list
+the cells that fail:
+
+```bash
+python scripts/run_notebooks.py               # all parts
+python scripts/run_notebooks.py part4 part6   # some parts
+```
+
+Errors caused by a missing network connection are reported apart from errors
+in the code.
+
 ## Structure
 
 ```

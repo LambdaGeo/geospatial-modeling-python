@@ -8,7 +8,7 @@ authors:
   - family-names: Costa
     given-names: Sérgio Souza
     affiliation: "Universidade Federal do Maranhão (UFMA), LambdaGeo Research Group"
-    # orcid: "https://orcid.org/0000-0000-0000-0000"   # add your ORCID
+    orcid: "https://orcid.org/0000-0002-0232-4549"
 license: CC-BY-4.0
 repository-code: "https://github.com/LambdaGeo/geospatial-modeling-python"
 keywords:

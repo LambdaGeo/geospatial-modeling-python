@@ -179,23 +179,48 @@ from Part IV.
 
 ## Installation
 
-```bash
-pip install geopandas rasterio xarray zarr libpysal salabim
-```
-
-For Part IV onward, which use DisSModel directly:
+The book needs **Python 3.11 or newer** (the minimum of DisSCube and DisSLUCC).
+Everything the chapters import, at the versions they were checked against,
+is listed in the book's `requirements.txt`:
 
 ```bash
-pip install dissmodel
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
 ```
 
-Extension packages (`dissmodel-ca`, `dissmodel-sysdyn`, `dissmodel-abm`,
-`disslucc-continuous`, `disslucc-discrete`, `brmangue-dissmodel`) aren't on
-PyPI yet — install each one straight from GitHub, e.g.:
+Volume I needs none of the DisSModel packages; its chapters run with the
+scientific Python stack alone (`geopandas`, `rasterio`, `xarray`, `libpysal`,
+`salabim` and friends).
+
+Volume II uses the DisSModel ecosystem. Three packages are on PyPI:
 
 ```bash
-pip install "git+https://github.com/DisSModel/dissmodel-ca.git"
+pip install dissmodel==0.6.6 disscube==0.6.0 disslucc==0.5.0
 ```
+
+The paradigm extensions of Part IV are installed from their GitHub releases:
+
+```bash
+pip install "git+https://github.com/DisSModel/dissmodel-ca.git@v0.1.0"
+pip install "git+https://github.com/DisSModel/dissmodel-sysdyn.git@v0.1.1"
+pip install "git+https://github.com/DisSModel/dissmodel-abm.git"
+```
+
+To check your environment against the book, `python scripts/run_notebooks.py`
+executes every chapter and lists the cells that fail. A few chapters read live
+services (Natural Earth, IBGE, INPE) and need network access.
+
+### Package versions
+
+| Package | Version | Where | DOI |
+|---|---|---|---|
+| `dissmodel` | 0.6.6 | PyPI | [10.5281/zenodo.23246106](https://doi.org/10.5281/zenodo.23246106) |
+| `disscube` | 0.6.0 | PyPI | [10.5281/zenodo.23365403](https://doi.org/10.5281/zenodo.23365403) |
+| `disslucc` | 0.5.0 | PyPI | [10.5281/zenodo.23219338](https://doi.org/10.5281/zenodo.23219338) |
+| `dissmodel-ca` | 0.1.0 | GitHub | [10.5281/zenodo.23241654](https://doi.org/10.5281/zenodo.23241654) |
+| `dissmodel-sysdyn` | 0.1.1 | GitHub | [10.5281/zenodo.23242935](https://doi.org/10.5281/zenodo.23242935) |
+| `dissmodel-abm` | 0.1.0 (no release yet) | GitHub | — |
+| `brmangue-dissmodel` | 0.5.0 | GitHub | [10.5281/zenodo.23240385](https://doi.org/10.5281/zenodo.23240385) |
 
 ---
 
