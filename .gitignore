@@ -8,3 +8,4 @@ __pycache__/
 # files written by running the chapters
 docs/part6/cube_demo/
 docs/part6/same_*.tif
+docs/part6/evidence/
