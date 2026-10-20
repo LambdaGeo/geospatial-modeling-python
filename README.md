@@ -14,14 +14,34 @@ mkdocs build        # build static site to site/
 mkdocs gh-deploy    # deploy to GitHub Pages
 ```
 
+## Check the chapters
+
+The notebooks are stored with their outputs and the site does not execute
+them. To run every chapter against the pinned packages (Python 3.11+) and list
+the cells that fail:
+
+```bash
+python scripts/run_notebooks.py               # all parts
+python scripts/run_notebooks.py part4 part6   # some parts
+```
+
+Errors caused by a missing network connection are reported apart from errors
+in the code.
+
 ## Structure
 
 ```
 docs/
   index.md
-  part1/   ch01 … ch05   # Python for Data Science
-  part2/   ch06 … ch10   # Geographic Data Science
-  part3/   ch11 … ch20   # Discrete Spatial Modeling
+  # Volume I — Foundations
+  part1/   ch01 … ch05   # Scientific Python for Researchers
+  part2/   ch06 … ch16   # Geographic Data Science
+  part3/   ch17 … ch20   # Foundations of Spatial Simulation
+  # Volume II — The DisSModel Ecosystem
+  part4/   ch21 … ch25   # DisSModel: Core and Paradigms
+  part5/   ch26 … ch27   # Domain Modeling: Land Use & Coastal Systems
+  part6/   ch28 … ch31   # Data, Reproducibility & Verification
+  part7/   ch32 … ch35   # Scaling, Migration & Reference (ch33 optional)
 ```
 
 ## PDF version

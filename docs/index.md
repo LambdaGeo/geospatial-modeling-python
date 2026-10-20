@@ -40,13 +40,14 @@ is geospatial Python on its own, this volume is the whole book you need.
   Cellular automata, discrete-event simulation with salabim, NumPy
   vectorization, and the performance problem that motivates DisSModel.
 
-## Volume II — The DisSModel Ecosystem (Ch 21–33)
+## Volume II — The DisSModel Ecosystem (Ch 21–35)
 
 Picks up exactly where Volume I leaves off and hands its concepts to
 [DisSModel](https://github.com/DisSModel/dissmodel), the Python-native
 spatial modeling framework this book's own research group develops —
 installation, every simulation paradigm as a framework, domain case
-studies, infrastructure, and a TerraME/LUCCME migration guide. (The
+studies, data preparation, reproducibility and verification against
+TerraME/LuccME, a complete experiment, and a TerraME/LUCCME migration guide. (The
 `dissmodel` package's own API reference lives with the code, at
 [dissmodel.github.io/dissmodel](https://dissmodel.github.io/dissmodel/);
 this volume is the narrative path to it, not a substitute.)
@@ -58,12 +59,14 @@ this volume is the narrative path to it, not a substitute.)
 - **Part V** — Domain Modeling: Land Use & Coastal Systems
   DisSLUCC's land-use change models and a full coastal dynamics case study.
 
-- **Part VI** — Data & Infrastructure
-  Reproducibility, the DisSModel Platform, and spatial data cubes.
+- **Part VI** — Data, Reproducibility & Verification
+  Spatial data cubes with DisSCube, experiment provenance, verification
+  against TerraME and LuccME, and the Open LUCC workflow as a complete case.
 
 - **Part VII** — Scaling, Migration & Reference
-  Ensemble scenarios, migrating an existing TerraME/LUCCME model, and how to
-  contribute to the ecosystem.
+  Ensemble scenarios, running models on the DisSModel Platform (optional),
+  migrating an existing TerraME/LUCCME model, and how to contribute to the
+  ecosystem.
 
 ---
 
@@ -141,13 +144,14 @@ bookkeeping.*
 
 ---
 
-## Part VI — Data & Infrastructure
+## Part VI — Data, Reproducibility & Verification
 
 | Ch | Title | Notebook |
 |----|-------|----------|
-| 28 | Reproducibility and Experiment Provenance | `part6/ch28_provenance.ipynb` |
-| 29 | Running Models with the DisSModel Platform | `part6/ch29_platform.ipynb` |
-| 30 | Spatial Data Cubes | `part6/ch30_disscube.ipynb` |
+| 28 | Spatial Data Cubes | `part6/ch28_disscube.ipynb` |
+| 29 | Reproducibility and Experiment Provenance | `part6/ch29_provenance.ipynb` |
+| 30 | Verifying Against a Reference Implementation | `part6/ch30_verification.ipynb` |
+| 31 | Case Study — The Open LUCC Workflow | `part6/ch31_open_lucc.ipynb` |
 
 ---
 
@@ -155,9 +159,10 @@ bookkeeping.*
 
 | Ch | Title | Notebook |
 |----|-------|----------|
-| 31 | Ensemble Scenarios and Sensitivity Analysis | `part7/ch31_ensemble.ipynb` |
-| 32 | Migrating from TerraME/LUCCME to DisSModel | `part7/ch32_migration.ipynb` |
-| 33 | Architecture and Contributing | `part7/ch33_architecture.ipynb` |
+| 32 | Ensemble Scenarios and Sensitivity Analysis | `part7/ch32_ensemble.ipynb` |
+| 33 | Running Models with the DisSModel Platform *(optional)* | `part7/ch33_platform.ipynb` |
+| 34 | Migrating from TerraME/LUCCME to DisSModel | `part7/ch34_migration.ipynb` |
+| 35 | Architecture and Contributing | `part7/ch35_architecture.ipynb` |
 
 ---
 
@@ -174,23 +179,48 @@ from Part IV.
 
 ## Installation
 
-```bash
-pip install geopandas rasterio xarray zarr libpysal salabim
-```
-
-For Part IV onward, which use DisSModel directly:
+The book needs **Python 3.11 or newer** (the minimum of DisSCube and DisSLUCC).
+Everything the chapters import, at the versions they were checked against,
+is listed in the book's `requirements.txt`:
 
 ```bash
-pip install dissmodel
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
 ```
 
-Extension packages (`dissmodel-ca`, `dissmodel-sysdyn`, `dissmodel-abm`,
-`disslucc-continuous`, `disslucc-discrete`, `brmangue-dissmodel`) aren't on
-PyPI yet — install each one straight from GitHub, e.g.:
+Volume I needs none of the DisSModel packages; its chapters run with the
+scientific Python stack alone (`geopandas`, `rasterio`, `xarray`, `libpysal`,
+`salabim` and friends).
+
+Volume II uses the DisSModel ecosystem. Three packages are on PyPI:
 
 ```bash
-pip install "git+https://github.com/DisSModel/dissmodel-ca.git"
+pip install dissmodel==0.6.6 disscube==0.6.0 disslucc==0.5.0
 ```
+
+The paradigm extensions of Part IV are installed from their GitHub releases:
+
+```bash
+pip install "git+https://github.com/DisSModel/dissmodel-ca.git@v0.1.0"
+pip install "git+https://github.com/DisSModel/dissmodel-sysdyn.git@v0.1.1"
+pip install "git+https://github.com/DisSModel/dissmodel-abm.git"
+```
+
+To check your environment against the book, `python scripts/run_notebooks.py`
+executes every chapter and lists the cells that fail. A few chapters read live
+services (Natural Earth, IBGE, INPE) and need network access.
+
+### Package versions
+
+| Package | Version | Where | DOI |
+|---|---|---|---|
+| `dissmodel` | 0.6.6 | PyPI | [10.5281/zenodo.23246106](https://doi.org/10.5281/zenodo.23246106) |
+| `disscube` | 0.6.0 | PyPI | [10.5281/zenodo.23365403](https://doi.org/10.5281/zenodo.23365403) |
+| `disslucc` | 0.5.0 | PyPI | [10.5281/zenodo.23219338](https://doi.org/10.5281/zenodo.23219338) |
+| `dissmodel-ca` | 0.1.0 | GitHub | [10.5281/zenodo.23241654](https://doi.org/10.5281/zenodo.23241654) |
+| `dissmodel-sysdyn` | 0.1.1 | GitHub | [10.5281/zenodo.23242935](https://doi.org/10.5281/zenodo.23242935) |
+| `dissmodel-abm` | 0.1.0 (no release yet) | GitHub | — |
+| `brmangue-dissmodel` | 0.5.0 | GitHub | [10.5281/zenodo.23240385](https://doi.org/10.5281/zenodo.23240385) |
 
 ---
 

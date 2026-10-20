@@ -3,7 +3,10 @@ mkdocs-material>=9.5
 mkdocs-jupyter>=0.24
 mkdocs-print-site-plugin>=2.6
 pymdown-extensions>=10.0
-dissmodel>=0.2.0
+# DisSModel ecosystem, pinned to the releases the book was checked against
+dissmodel==0.6.6
+disscube==0.6.0
+disslucc==0.5.0
 geopandas
 rasterio
 rasterstats
@@ -25,10 +28,17 @@ spopt
 pointpats
 contextily
 folium
-git+https://github.com/DisSModel/dissmodel-ca.git
-git+https://github.com/DisSModel/dissmodel-sysdyn.git
-git+https://github.com/DisSModel/dissmodel-abm.git
+# Extension packages are not on PyPI: install the tagged release from GitHub
+# (dissmodel-abm has no release yet, so it is pinned to a commit)
+dissmodel-ca @ git+https://github.com/DisSModel/dissmodel-ca.git@v0.1.0
+dissmodel-sysdyn @ git+https://github.com/DisSModel/dissmodel-sysdyn.git@v0.1.1
+dissmodel-abm @ git+https://github.com/DisSModel/dissmodel-abm.git@6e91d323712e0f01a69c828a9d84787bb2a121bb
 greenlet
 statsmodels
+SALib          # Chapter 32 (ensembles)
 wtss
 setuptools<82  # wtss still imports pkg_resources, removed in setuptools 82.0.0
+# Running every notebook: python scripts/run_notebooks.py
+nbclient
+nbformat
+ipykernel
