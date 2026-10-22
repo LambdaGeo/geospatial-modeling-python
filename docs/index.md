@@ -201,9 +201,9 @@ pip install dissmodel==0.6.6 disscube==0.6.0 disslucc==0.5.0
 The paradigm extensions of Part IV are installed from their GitHub releases:
 
 ```bash
-pip install "git+https://github.com/DisSModel/dissmodel-ca.git@v0.1.0"
-pip install "git+https://github.com/DisSModel/dissmodel-sysdyn.git@v0.1.1"
-pip install "git+https://github.com/DisSModel/dissmodel-abm.git"
+pip install "git+https://github.com/DisSModel/dissmodel-ca.git@v0.2.0"
+pip install "git+https://github.com/DisSModel/dissmodel-sysdyn.git@v0.2.0"
+pip install "git+https://github.com/DisSModel/dissmodel-abm.git@v0.2.0"
 ```
 
 To check your environment against the book, `python scripts/run_notebooks.py`
@@ -217,9 +217,9 @@ services (Natural Earth, IBGE, INPE) and need network access.
 | `dissmodel` | 0.6.6 | PyPI | [10.5281/zenodo.23246106](https://doi.org/10.5281/zenodo.23246106) |
 | `disscube` | 0.6.0 | PyPI | [10.5281/zenodo.23365403](https://doi.org/10.5281/zenodo.23365403) |
 | `disslucc` | 0.5.0 | PyPI | [10.5281/zenodo.23219338](https://doi.org/10.5281/zenodo.23219338) |
-| `dissmodel-ca` | 0.1.0 | GitHub | [10.5281/zenodo.23241654](https://doi.org/10.5281/zenodo.23241654) |
-| `dissmodel-sysdyn` | 0.1.1 | GitHub | [10.5281/zenodo.23242935](https://doi.org/10.5281/zenodo.23242935) |
-| `dissmodel-abm` | 0.1.0 (no release yet) | GitHub | — |
+| `dissmodel-ca` | 0.2.0 | GitHub | TODO: DOI of v0.2.0 |
+| `dissmodel-sysdyn` | 0.2.0 | GitHub | TODO: DOI of v0.2.0 |
+| `dissmodel-abm` | 0.2.0 | GitHub | TODO: DOI of v0.2.0 |
 | `brmangue-dissmodel` | 0.5.0 | GitHub | [10.5281/zenodo.23240385](https://doi.org/10.5281/zenodo.23240385) |
 
 ---
