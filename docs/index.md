@@ -217,9 +217,9 @@ services (Natural Earth, IBGE, INPE) and need network access.
 | `dissmodel` | 0.6.6 | PyPI | [10.5281/zenodo.23246106](https://doi.org/10.5281/zenodo.23246106) |
 | `disscube` | 0.6.0 | PyPI | [10.5281/zenodo.23365403](https://doi.org/10.5281/zenodo.23365403) |
 | `disslucc` | 0.5.0 | PyPI | [10.5281/zenodo.23219338](https://doi.org/10.5281/zenodo.23219338) |
-| `dissmodel-ca` | 0.2.0 | GitHub | TODO: DOI of v0.2.0 |
-| `dissmodel-sysdyn` | 0.2.0 | GitHub | TODO: DOI of v0.2.0 |
-| `dissmodel-abm` | 0.2.0 | GitHub | TODO: DOI of v0.2.0 |
+| `dissmodel-ca` | 0.2.0 | GitHub | [10.5281/zenodo.23593069](https://doi.org/10.5281/zenodo.23593069) |
+| `dissmodel-sysdyn` | 0.2.0 | GitHub | [10.5281/zenodo.23592996](https://doi.org/10.5281/zenodo.23592996) |
+| `dissmodel-abm` | 0.2.0 | GitHub | [10.5281/zenodo.23593099](https://doi.org/10.5281/zenodo.23593099) |
 | `brmangue-dissmodel` | 0.5.0 | GitHub | [10.5281/zenodo.23240385](https://doi.org/10.5281/zenodo.23240385) |
 
 ---
