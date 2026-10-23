@@ -55,7 +55,7 @@ mkdocs serve
 ## Citation and license
 
 Cite this book using [`CITATION.cff`](CITATION.cff) (GitHub's "Cite this repository" button)
-or the DOI on Zenodo. Text, figures and code are released under
+or the DOI on Zenodo once the first release is out. Text, figures and code are released under
 [CC BY 4.0](LICENSE).
 
 ## Contributing

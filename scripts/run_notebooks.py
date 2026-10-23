@@ -34,6 +34,7 @@ NETWORK_HINTS = (
     "Name or service not known", "Temporary failure in name resolution",
     "Failed to establish a new connection", "CURL error", "HTTP response code",
     "403 Forbidden", "timed out",
+    "/vsicurl/",  # GDAL reading a URL: "does not exist in the file system" when the download fails
 )
 
 

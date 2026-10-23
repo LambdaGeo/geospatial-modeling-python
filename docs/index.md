@@ -112,7 +112,7 @@ chapters are readable without any DisSModel knowledge.*
 
 | Ch | Title | Notebook |
 |----|-------|----------|
-| 17 | Paradigms of Spatial Simulation | `part3/ch17_paradigms.ipynb` |
+| 17 | Tools for Spatial Simulation | `part3/ch17_paradigms.ipynb` |
 | 18 | Cellular Automata from Scratch | `part3/ch18_ca.ipynb` |
 | 19 | Discrete-Event Simulation with salabim | `part3/ch19_des.ipynb` |
 | 20 | The Performance Problem — and the Solution | `part3/ch20_performance.ipynb` |
@@ -238,7 +238,7 @@ All notebooks and supporting code are available at:
 If you use this material in your research or teaching, please cite:
 
 ```
-Costa, S. S. (2028). Geospatial Modeling with Python.
+Costa, S. S. (2026). Geospatial Modeling with Python (draft).
 LambdaGEO Research Group, Federal University of Maranhão (UFMA).
 https://lambdageo.github.io/geospatial-modeling-python
 ```
