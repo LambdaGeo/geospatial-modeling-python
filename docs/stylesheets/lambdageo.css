@@ -471,3 +471,11 @@ input:focus-visible {
     margin-right: 1.25rem;
   }
 }
+
+/* Wide display equations scroll sideways instead of being clipped on phones. */
+.md-typeset mjx-container[display="true"],
+.md-typeset .arithmatex {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
