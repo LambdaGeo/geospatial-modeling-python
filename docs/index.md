@@ -198,7 +198,7 @@ Volume II uses the DisSModel ecosystem. Three packages are on PyPI:
 pip install dissmodel==0.6.6 disscube==0.6.0 disslucc==0.5.0
 ```
 
-The paradigm extensions of Part IV are installed from their GitHub releases:
+The packages of Part IV are installed from their GitHub releases: the model collections `dissmodel-ca` and `dissmodel-sysdyn`, and the agent extension `dissmodel-abm`:
 
 ```bash
 pip install "git+https://github.com/DisSModel/dissmodel-ca.git@v0.2.0"
