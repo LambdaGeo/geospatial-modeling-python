@@ -1,0 +1,41 @@
+/* Print / PDF rules (used with mkdocs-print-site-plugin) */
+@media print {
+  /* Don't split code blocks, tables, figures or admonitions across pages */
+  pre, .highlight, table, figure, img, .admonition, .jp-OutputArea {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Keep headings with the content that follows */
+  h1, h2, h3, h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* Each chapter (h1) starts on a new page */
+  .md-content__inner h1 {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  /* Hide site chrome */
+  .md-footer, .md-header, .md-sidebar, .md-top, .md-tabs {
+    display: none !important;
+  }
+
+  /* Make wide outputs fit the page */
+  img, svg, .jp-RenderedImage img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  pre, code {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  /* Keep colors of code blocks and syntax highlighting */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

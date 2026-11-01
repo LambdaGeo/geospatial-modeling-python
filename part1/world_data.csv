@@ -1,0 +1,178 @@
+country,continent,population,gdp
+Fiji,Oceania,889953.0,5496
+Tanzania,Africa,58005463.0,63177
+W. Sahara,Africa,603253.0,907
+Canada,North America,37589262.0,1736425
+United States of America,North America,328239523.0,21433226
+Kazakhstan,Asia,18513930.0,181665
+Uzbekistan,Asia,33580650.0,57921
+Papua New Guinea,Oceania,8776109.0,24829
+Indonesia,Asia,270625568.0,1119190
+Argentina,South America,44938712.0,445445
+Chile,South America,18952038.0,282318
+Dem. Rep. Congo,Africa,86790567.0,50400
+Somalia,Africa,10192317.3,4719
+Kenya,Africa,52573973.0,95503
+Sudan,Africa,42813238.0,30513
+Chad,Africa,15946876.0,11314
+Haiti,North America,11263077.0,14332
+Dominican Rep.,North America,10738958.0,88941
+Russia,Europe,144373535.0,1699876
+Bahamas,North America,389482.0,13578
+Falkland Is.,South America,3398.0,282
+Norway,Europe,5347896.0,403336
+Greenland,North America,56225.0,3051
+Fr. S. Antarctic Lands,Seven seas (open ocean),140.0,16
+Timor-Leste,Asia,1293119.0,2017
+South Africa,Africa,58558270.0,351431
+Lesotho,Africa,2125268.0,2376
+Mexico,North America,127575529.0,1268870
+Uruguay,South America,3461734.0,56045
+Brazil,South America,211049527.0,1839758
+Bolivia,South America,11513100.0,40895
+Peru,South America,32510453.0,226848
+Colombia,South America,50339443.0,323615
+Panama,North America,4246439.0,66800
+Costa Rica,North America,5047561.0,61801
+Nicaragua,North America,6545502.0,12520
+Honduras,North America,9746117.0,25095
+El Salvador,North America,6453553.0,27022
+Guatemala,North America,16604026.0,76710
+Belize,North America,390353.0,1879
+Venezuela,South America,28515829.0,482359
+Guyana,South America,782766.0,5173
+Suriname,South America,581363.0,3697
+France,Europe,67059887.0,2715518
+Ecuador,South America,17373662.0,107435
+Puerto Rico,North America,3193694.0,104988
+Jamaica,North America,2948279.0,16458
+Cuba,North America,11333483.0,100023
+Zimbabwe,Africa,14645468.0,21440
+Botswana,Africa,2303697.0,18340
+Namibia,Africa,2494530.0,12366
+Senegal,Africa,16296364.0,23578
+Mali,Africa,19658031.0,17279
+Mauritania,Africa,4525696.0,7600
+Benin,Africa,11801151.0,14390
+Niger,Africa,23310715.0,12911
+Nigeria,Africa,200963599.0,448120
+Cameroon,Africa,25876380.0,39007
+Togo,Africa,8082366.0,5490
+Ghana,Africa,30417856.0,66983
+Côte d'Ivoire,Africa,25716544.0,58539
+Guinea,Africa,12771246.0,12296
+Guinea-Bissau,Africa,1920922.0,1339
+Liberia,Africa,4937374.0,3070
+Sierra Leone,Africa,7813215.0,4121
+Burkina Faso,Africa,20321378.0,15990
+Central African Rep.,Africa,4745185.0,2220
+Congo,Africa,5380508.0,12267
+Gabon,Africa,2172579.0,16874
+Eq. Guinea,Africa,1355986.0,11026
+Zambia,Africa,17861030.0,23309
+Malawi,Africa,18628747.0,7666
+Mozambique,Africa,30366036.0,15291
+eSwatini,Africa,1148130.0,4471
+Angola,Africa,31825295.0,88815
+Burundi,Africa,11530580.0,3012
+Israel,Asia,9053300.0,394652
+Lebanon,Asia,6855713.0,51991
+Madagascar,Africa,26969307.0,14114
+Palestine,Asia,4685306.0,16276
+Gambia,Africa,2347706.0,1826
+Tunisia,Africa,11694719.0,38796
+Algeria,Africa,43053054.0,171091
+Jordan,Asia,10101694.0,44502
+United Arab Emirates,Asia,9770529.0,421142
+Qatar,Asia,2832067.0,175837
+Kuwait,Asia,4207083.0,134628
+Iraq,Asia,39309783.0,234094
+Oman,Asia,4974986.0,76331
+Vanuatu,Oceania,299882.0,934
+Cambodia,Asia,16486542.0,27089
+Thailand,Asia,69625582.0,543548
+Laos,Asia,7169455.0,18173
+Myanmar,Asia,54045420.0,76085
+Vietnam,Asia,96462106.0,261921
+North Korea,Asia,25666161.0,40000
+South Korea,Asia,51709098.0,1646739
+Mongolia,Asia,3225167.0,13996
+India,Asia,1366417754.0,2868929
+Bangladesh,Asia,163046161.0,302571
+Bhutan,Asia,763092.0,2530
+Nepal,Asia,28608710.0,30641
+Pakistan,Asia,216565318.0,278221
+Afghanistan,Asia,38041754.0,19291
+Tajikistan,Asia,9321018.0,8116
+Kyrgyzstan,Asia,6456900.0,8454
+Turkmenistan,Asia,5942089.0,40761
+Iran,Asia,82913906.0,453996
+Syria,Asia,17070135.0,98830
+Armenia,Asia,2957731.0,13672
+Sweden,Europe,10285453.0,530883
+Belarus,Europe,9466856.0,63080
+Ukraine,Europe,44385155.0,153781
+Poland,Europe,37970874.0,595858
+Austria,Europe,8877067.0,445075
+Hungary,Europe,9769949.0,163469
+Moldova,Europe,2657637.0,11968
+Romania,Europe,19356544.0,250077
+Lithuania,Europe,2786844.0,54627
+Latvia,Europe,1912789.0,34102
+Estonia,Europe,1326590.0,31471
+Germany,Europe,83132799.0,3861123
+Bulgaria,Europe,6975761.0,68558
+Greece,Europe,10716322.0,209852
+Turkey,Asia,83429615.0,761425
+Albania,Europe,2854191.0,15279
+Croatia,Europe,4067500.0,60752
+Switzerland,Europe,8574832.0,703082
+Luxembourg,Europe,619896.0,71104
+Belgium,Europe,11484055.0,533097
+Netherlands,Europe,17332850.0,907050
+Portugal,Europe,10269417.0,238785
+Spain,Europe,47076781.0,1393490
+Ireland,Europe,4941444.0,388698
+New Caledonia,Oceania,287800.0,10770
+Solomon Is.,Oceania,669823.0,1589
+New Zealand,Oceania,4917000.0,206928
+Australia,Oceania,25364307.0,1396567
+Sri Lanka,Asia,21803000.0,84008
+China,Asia,1397715000.0,14342903
+Taiwan,Asia,23568378.0,1127000
+Italy,Europe,60297396.0,2003576
+Denmark,Europe,5818553.0,350104
+United Kingdom,Europe,66834405.0,2829108
+Iceland,Europe,361313.0,24188
+Azerbaijan,Asia,10023318.0,48047
+Georgia,Asia,3720382.0,17477
+Philippines,Asia,108116615.0,376795
+Malaysia,Asia,31949777.0,364681
+Brunei,Asia,433285.0,13469
+Slovenia,Europe,2087946.0,54174
+Finland,Europe,5520314.0,269296
+Slovakia,Europe,5454073.0,105079
+Czechia,Europe,10669709.0,250680
+Eritrea,Africa,6081196.0,2065
+Japan,Asia,126264931.0,5081769
+Paraguay,South America,7044636.0,38145
+Yemen,Asia,29161922.0,22581
+Saudi Arabia,Asia,34268528.0,792966
+Antarctica,Antarctica,4490.0,898
+N. Cyprus,Asia,326000.0,3600
+Cyprus,Asia,1198575.0,24948
+Morocco,Africa,36471769.0,119700
+Egypt,Africa,100388073.0,303092
+Libya,Africa,6777452.0,52091
+Ethiopia,Africa,112078730.0,95912
+Djibouti,Africa,973560.0,3324
+Somaliland,Africa,5096159.0,17836
+Uganda,Africa,44269594.0,35165
+Rwanda,Africa,12626950.0,10354
+Bosnia and Herz.,Europe,3301000.0,20164
+North Macedonia,Europe,2083459.0,12547
+Serbia,Europe,6944975.0,51475
+Montenegro,Europe,622137.0,5542
+Kosovo,Europe,1794248.0,7926
+Trinidad and Tobago,North America,1394973.0,24269
+S. Sudan,Africa,11062113.0,11998
