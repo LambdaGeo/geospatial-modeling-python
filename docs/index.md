@@ -222,6 +222,20 @@ services (Natural Earth, IBGE, INPE) and need network access.
 | `dissmodel-abm` | 0.2.0 | GitHub | [10.5281/zenodo.23593099](https://doi.org/10.5281/zenodo.23593099) |
 | `brmangue-dissmodel` | 0.5.0 | GitHub | [10.5281/zenodo.23240385](https://doi.org/10.5281/zenodo.23240385) |
 
+### Reference data and evidence
+
+The chapters that compare DisSModel with TerraME and LuccME, or that run a case from data, read these releases:
+
+| Repository | Version | Used in | DOI |
+|---|---|---|---|
+| `terrame-goldens` | 0.1.0 | Chapters 23–25 | [10.5281/zenodo.23592970](https://doi.org/10.5281/zenodo.23592970) |
+| `luccme-goldens` | 1.1.0 | Chapters 26, 30 | [10.5281/zenodo.23161342](https://doi.org/10.5281/zenodo.23161342) |
+| `terrame-docker` | 0.4.2 | Chapter 30 | [10.5281/zenodo.23160784](https://doi.org/10.5281/zenodo.23160784) |
+| `disscube-benchmark` | 1.1.0 | Chapter 30 | [10.5281/zenodo.23366475](https://doi.org/10.5281/zenodo.23366475) |
+| `disslucc-benchmark` | 0.2.2 | Chapters 26, 30 | [10.5281/zenodo.23224097](https://doi.org/10.5281/zenodo.23224097) |
+| `disscube-grids` | 1.1.0 | Chapter 28 | [10.5281/zenodo.23502247](https://doi.org/10.5281/zenodo.23502247) |
+| `open-lucc-workflow` | 1.1.0 | Chapter 31 | [10.5281/zenodo.23415814](https://doi.org/10.5281/zenodo.23415814) |
+
 ---
 
 ## Source Code
